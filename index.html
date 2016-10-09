@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<audio controls src="mp3/薛之谦 - 演员.mp3" style="display: none"></audio>
+<div class="top">
+    <div class="cicle"></div>
+    <div class="zi">
+        <span>微暖丶 雪下落日月葵</span></br>
+        <span style="color:#c2edd8;display:block;padding-top: 4px">加速已完成</span>
+    </div>
+    <div class="btn">
+        <div class="left"><</div>
+        <div class="right">></div>
+    </div>
+    <div style="width: 18px;height: 18px;float:left;margin-top:15px;margin-left:12px;background: url(img/shuaxin.jpg) no-repeat center  center;"></div>
+    <div class="search"><input type="text" value="我们都一样"></div>
+    <div style="width: 18px;height: 18px;float:left;margin-top:15px;margin-left:12px;background: url(img/yinyue.jpg) no-repeat center  center;"></div>
+    <div class="ding">
+        <div style="width: 26px;height: 18px;float:left;margin-top:15px;background: url(img/vip.jpg) no-repeat center  center;"></div>
+        <div style="width: 28px;height: 18px;float:left;margin-top:15px;background: url(img/xin.jpg) no-repeat center  center;"></div>
+        <div style="width: 22px;height: 18px;float:left;margin-top:15px;background: url(img/yi.jpg) no-repeat center  center;"></div>
+        <div style="width: 26px;height: 21px;float:left;margin-top:12px;margin-left:5px;background: url(img/lie.jpg) no-repeat center  center;"></div>
+        <div style="width: 12px;height: 18px;color:#fff;float:left;margin-top:15px;">|</div>
+        <div style="width: 22px;height: 18px;float:left;margin-top:15px;background: url(img/la.jpg) no-repeat center  center;"></div>
+        <div style="width: 14px;height: 8px;float:left;margin-top:8px;margin-left:5px;color: #fff">_</div>
+        <div style="width: 22px;height: 21px;float:left;margin-top:12px;background: url(img/kou.jpg) no-repeat center  center;"></div>
+        <div style="width: 22px;height: 18px;float:left;margin-top:15px;margin-left:8px;background: url(img/cuo.jpg) no-repeat center  center;"></div>
+    </div>
+</div>
+    <div class="mid clearfix">
+        <ul class="left">
+            <li class="tit">在线音乐</li>
+            <li class="line" style="background: url(img/yinyueguan.jpg) no-repeat left 25px center;">音乐馆</li>
+            <li class="line" style="background: url(img/diantai.jpg) no-repeat left 25px center;">电台</li>
+            <li class="line" style="background: url(img/mv.jpg) no-repeat left 25px center;">MV</li>
+            <li class="line" style="background: url(img/gexing.jpg) no-repeat left 25px center;">个性电台</li>
+            <li class="line" style="background: url(img/zhongguo.jpg) no-repeat left 25px center;">中国新歌声</li>
+            <li class="tit">我的音乐</li>
+            <li class="line" style="background: url(img/woxihuan.jpg) no-repeat left 25px center;">我喜欢</li>
+            <li class="line" style=" color:#fff; background: #31c27c;background-image: url(img/shiting.jpg) ;background-repeat:no-repeat; background-position: left 25px center;">试听列表</li>
+            <li class="line" style="background: url(img/lishi.jpg) no-repeat left 21px center;">播放历史</li>
+            <li class="line" style="background: url(img/bendi.jpg) no-repeat left 25px center;">本地歌曲</li>
+            <li class="line" style="background: url(img/xiazai.jpg) no-repeat left 25px center;">下载歌曲</li>
+            <li class="line" style="background: url(img/chuange.jpg) no-repeat left 25px center;">传歌到设备</li>
+            <li class="tit">我创建的歌单</li>
+            <li class="line" style="background: url(img/gedan.jpg) no-repeat left 25px center;">新建歌单1</li>
+            <li class="line" style="background: url(img/gedan.jpg) no-repeat left 25px center;">QQ炫舞</li>
+            <li class="line" style="background: url(img/gedan.jpg) no-repeat left 25px center;">我最爱听</li>
+            <li class="line" style="background: url(img/gedan.jpg) no-repeat left 25px center;">默认列表</li>
+        </ul>
+        <div class="right">
+            <ul class="shiting">
+                <li class="title">试听列表</li>
+                <li class="da">
+                    <ul class="small">
+                        <li style="background: url(img/icon1.png) no-repeat left 3px center">播放全部</li>
+                        <li style="background: url(img/i7.png) no-repeat left 2px center">下载</li>
+                        <li style="background: url(img/i2.png) no-repeat left 3px center">批量操作</li>
+                        <li style="float: right;margin-right:32px;color:#808080 ;padding-right:20px;background: url(img/i3.png) no-repeat right 3px center" > <input type="text" value="搜索试听列表的歌曲">|</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="biaoti">
+                <div class="lie" style="width:33%;">歌曲</div>
+                <div class="lie" style="width:15%;">歌手</div>
+                <div class="lie" style="width:20%;">专辑</div>
+                <div class="lie"style="width:10%;">时长</div>
+            </div>
+            <ul class="play-list"></ul>
+
+    </div>
+    </div>
+    <div class="controler">
+        <div class="shangyishou"></div>
+        <div class="bofang-zanting"></div>
+        <div class="xiayishou"></div>
+        <div class="img"><!--<img src="zhuanji/yanyuan.jpg" alt="">--></div>
+        <div class="shijin">
+            <div class="shang">
+                <div class="geming">演员-薛之谦</div>
+                <div class="shichang">
+                    <span class="dangqianshichang">00:00</span>
+                    <span>/</span>
+                    <span class="zongshichang">04:21</span>
+                </div>
+            </div>
+        <div class="jindu">
+            <div class="play-current"></div>
+            <div class="yuan"></div>
+        </div>
+        </div>
+        <div class="biao" style="width:38px;height:16px;text-align:center;margin-left:12px;margin-top:22px;font-size: 12px;border:1px solid #4b4c4d; color:#4b4c4d;float: left">标准</div>
+        <div class="biao" style="width:38px;height:16px;text-align:center;margin-left:12px;margin-top:22px;font-size: 12px;border:1px solid #929292; color:#929292;float: left">音效</div>
+        <div style="width: 22px;height: 22px;background: url(img/xi.jpg) no-repeat center  center;margin-top: 19px;margin-left: 15px;float: left"></div>
+        <div style="width: 22px;height: 22px;background: url(img/zai.jpg) no-repeat center  center;margin-top: 19px;margin-left: 12px;float: left"></div>
+        <div style="width: 22px;height: 22px;background: url(img/xinxi.jpg) no-repeat center  center;margin-top: 19px;margin-left: 12px;float: left"></div>
+        <div class="yinliang"></div>
+        <div class="yinliangshezhi">
+            <div class="yuan"></div>
+        </div>
+        <div class="xunhuan">
+            <ul class="nav">
+                <li class="danqu" style="background: url(img/danqu.png) no-repeat left 10px center">单曲循环</li>
+                <li class="shunxu" style=" background:url(img/shunxu.png) no-repeat left 10px center">顺序播放</li>
+                <li class="suiji" style=" background:url(img/suiji.png) no-repeat left 10px center">随机播放</li>
+            </ul>
+        </div>
+
+        </div>
+
+</body>
+</html>
